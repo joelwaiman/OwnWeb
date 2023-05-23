@@ -1,0 +1,12 @@
+.titleHead{
+    display: flex;
+    justify-content: flex-start;
+    color: white;
+    margin: 15vw 0 0 50vw;
+}
+
+.titleHead h1{
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 40px;
+}
