@@ -3,8 +3,12 @@
     flex-direction: row;
     margin: 0 0 0 50vw;
 }
-.menu p{
+.menu .navLink{
     color: #5B8FB9;
     margin: 8% 25% 0 0;
     font-family: Roboto;
+    text-decoration: none;
+    &:focus{
+        color: #B6EADA;
+    }
 }
