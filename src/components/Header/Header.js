@@ -11,13 +11,16 @@ const Header = () => {
     ]
 
     return (
-        <header>
+        <>
             <div>
                 <nav className='menu'>{menu.map((accs) => {
                     return <NavLink className='navLink' to={accs.route}>{accs.name}</NavLink>
                 })}</nav>
             </div>
-        </header>
+                <nav className='menuCircles'>{menu.map((circ) => {
+                    return <NavLink className='circles' to={circ.route} key={circ.id}><div className='circle'/></NavLink>
+                })}</nav>
+        </>
     )
 }
 

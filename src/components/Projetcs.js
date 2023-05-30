@@ -6,7 +6,6 @@ const Projects = () => {
         { id: 0, name: 'Clon Meli' },
         { id: 1, name: 'E-Commerce' },
         {id:2, name: 'Project 3' },
-        {id: 3, name: 'Project 4'},
     ]
     return (
         <section className="projectCard">
