@@ -10,10 +10,22 @@ const Projects = () => {
     return (
         <section className="projectCard">
             {project.map((card) => {
-                return <div class="card">
-                    <div class="card2">
-                    </div>
+                return <div class="card-container">
+                <div class="card">
+                <div class="front-content">
+                  <p>{card.name}</p>
                 </div>
+                <div class="content">
+                  <p class="heading">Card Hover</p>
+                  <p class="bodyCard">
+                    Lorem ipsum dolor sit amet, consectetur adipii
+                    voluptas ten mollitia pariatur odit, ab
+                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
+                    necessitatibus dignissimos molestias.
+                  </p>
+                </div>
+              </div>
+              </div>
             })}
         </section>
     )
