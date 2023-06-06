@@ -1,12 +1,13 @@
 import React from "react";
-import './Projects.css'
+import './Projects.css';
 
 const Projects = () => {
     const project = [
-        { id: 0, name: 'Clon Meli' },
+        { id: 0, name: 'Clon MeLi' },
         { id: 1, name: 'E-Commerce' },
-        {id:2, name: 'Project 3' },
     ]
+
+
     return (
         <section className="projectCard">
             {project.map((card) => {
@@ -16,12 +17,10 @@ const Projects = () => {
                   <p>{card.name}</p>
                 </div>
                 <div class="content">
-                  <p class="heading">Card Hover</p>
+                  <p class="heading">{card.name}</p>
                   <p class="bodyCard">
                     Lorem ipsum dolor sit amet, consectetur adipii
-                    voluptas ten mollitia pariatur odit, ab
-                    minus ratione adipisci accusamus vel est excepturi laboriosam magnam
-                    necessitatibus dignissimos molestias.
+                    voluptas ten mollitia pariatur odit
                   </p>
                 </div>
               </div>

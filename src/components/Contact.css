@@ -1,0 +1,13 @@
+.icons{
+    display: flex;
+    justify-content: center;
+    margin: 33vh 0 0 0;
+}
+
+.typeIcons{
+    margin: 0 5rem;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 5rem;
+}

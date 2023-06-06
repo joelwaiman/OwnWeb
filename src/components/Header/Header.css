@@ -1,4 +1,5 @@
 .menu{
+    position: relative;
     display: flex;
     flex-direction: row;
     margin: 0 0 0 50vw;

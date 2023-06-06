@@ -1,3 +1,4 @@
+import Contact from './components/Contact';
 import Header from './components/Header/Header';
 import Home from './components/Home';
 import Projects from './components/Projetcs';
@@ -10,6 +11,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/Proyectos' element={<Projects/>}/>
+        <Route path='/Contacto' element={<Contact/>}/>
       </Routes>
     </BrowserRouter>
 
