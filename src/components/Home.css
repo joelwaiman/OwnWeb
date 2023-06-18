@@ -7,6 +7,8 @@
 
 .img{
     max-width: 20rem;
+    animation-name: delayAnimation;
+    animation-duration: 2s;
 }
 
 .titleHead h1{
@@ -15,8 +17,19 @@
     font-weight: 100;
     font-size: 40px;
     color: white;
+    animation-name: delayAnimation;
+    animation-duration: 2s;
 }
 
 .textHome{
     color: #B6EADA;
+}
+
+@keyframes delayAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
