@@ -11,8 +11,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(#03001C, #301E67);
-  background-repeat: no-repeat ;
+  /* background-image: url('./assets/bg.jpg'); */
+  background-image: linear-gradient(#03001C, #301E67); 
+  /* background-repeat: no-repeat ;
+  background-size: cover; */
 
 }
 

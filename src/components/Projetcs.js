@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 const Projects = () => {
   const project = [
-    { id: 0, name: 'Clon MeLi', link: 'https://me-li-clon.vercel.app/' },
-    { id: 1, name: 'E-Commerce'},
+    { id: 0, name: 'Clon MeLi', link: 'https://me-li-clon.vercel.app/', description:'Clon de conocido E-commerce. Ruteo y filtrado, tanto de categoria, como producto individual. Consumiendo API de FakeStore' },
+    { id: 1, name: 'E-Commerce', link:'https://fantastic-snickerdoodle-df7706.netlify.app/', description: 'Proyecto de fin de curso, E-commerce completo creado con ReactJS. Uso de Hooks, States, Context y mas. Firebase como base de datos'},
   ]
 
 
@@ -21,8 +21,7 @@ const Projects = () => {
               <div class="content">
                 <p class="heading">{card.name}</p>
                 <p class="bodyCard">
-                  Lorem ipsum dolor sit amet, consectetur adipii
-                  voluptas ten mollitia pariatur odit
+                  {card.description}
                 </p>
               </div>
           </div>

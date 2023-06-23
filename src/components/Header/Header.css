@@ -1,12 +1,13 @@
 .menu{
-    position: relative;
     display: flex;
     flex-direction: row;
-    margin: 0 0 0 58vw;
+    max-width: 100%;
+    margin: 3% 0 0 50%;
 }
+
 .menu .navLink{
+    margin-right: 25%;
     color: #5B8FB9;
-    margin: 8% 25% 0 0;
     font-family: Roboto;
     text-decoration: none;
     &:focus{
@@ -18,9 +19,9 @@
     position: absolute;
     display: flex;
     flex-direction: column;
-    width: 1rem;
+    width: 10%;
     justify-content: center;
-    margin: 15vw 0 0 0 ;
+    height: 90%;
 }
 
 .circles{
