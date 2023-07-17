@@ -14,7 +14,11 @@ const Header = () => {
         <>
             <div>
                 <nav className='menu'>{menu.map((accs) => {
-                    return <NavLink className='navLink' to={accs.route}>{accs.name}</NavLink>
+                    return <NavLink 
+                    className='navLink'
+                    to={accs.route}>
+                        {accs.name}
+                        </NavLink>
                 })}</nav>
             </div>
                 <nav className='menuCircles'>{menu.map((circ) => {

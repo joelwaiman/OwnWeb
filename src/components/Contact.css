@@ -21,6 +21,7 @@
     opacity: 0.5;
     &:hover{
         animation: opacity 0.8s infinite alternate;
+        cursor: pointer;
             }
 }
 
