@@ -1,6 +1,6 @@
 .icons-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin: auto;
     width: 80%;
@@ -41,6 +41,19 @@
     }
 
     100% {
+        opacity: 1;
+    }
+}
+
+@media(max-width:500px){
+    .icons-container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .typeIcons{
+        margin: 30% 0;
+    }
+    .icon{
         opacity: 1;
     }
 }

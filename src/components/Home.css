@@ -37,3 +37,21 @@
         opacity: 1;
     }
 }
+
+@media(max-width:500px){
+    .homeSide{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10%;
+    }
+    .img{
+        position: inherit;
+        max-width: 250px;
+    }
+    .titleHead h1{
+        position: inherit;
+        text-align: center;
+        font-size: 16px;
+    }
+}

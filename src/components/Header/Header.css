@@ -37,3 +37,26 @@
         background-color: #B6EADA;
     }
 }
+
+@media(max-width:475px){
+    .menu{
+        max-width: 100%;
+        justify-content: space-around;
+        margin: auto;
+        padding: 1rem;
+        backdrop-filter: brightness(100%);
+    }
+    .menu .navLink{
+        margin-right: 0;
+        font-size: 16px;
+        background-color: #03001C;
+        padding: 10px;
+        border: 1px solid #212121;
+        border-radius: 10px;
+        box-shadow: 1px 3px 1px #06012f,
+                    -1px -1px 1px #5B8FB9;
+    }
+    .menuCircles{
+        display: none;
+    }
+}

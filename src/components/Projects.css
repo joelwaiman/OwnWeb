@@ -118,3 +118,28 @@
       opacity: 1;
   }
 }
+
+@media(max-width:500px){
+  .projectCard{
+    height: 100%;
+    padding: 10% 0;
+  }
+  .card-container{
+    width: 200px;
+    height: 200px;
+    margin: 7% 0;
+  }
+  .card .front-content p{
+    font-size: 21px;
+  }
+  .card .content{
+    justify-content:flex-start;
+    gap: 3px;
+  }
+  .card .content .heading{
+    font-size: 27px;
+  }
+  .card .content p{
+    font-size: 12px;
+  }
+}
