@@ -2,27 +2,39 @@
     display: flex;
     flex-direction: row;
     max-width: 100%;
-    margin: 3% 0 0 50%;
+    margin: 2% 0
 }
 
-.menu .navLink{
-    margin-right: 25%;
+.nav{
+    display: flex;  
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 0 0 50%;
+}
+
+.navLink{
     color: #5B8FB9;
     font-family: Roboto;
     text-decoration: none;
-    &:focus{
+    &:hover{
         color: #B6EADA;
+        transition: all 0.3s ease;
     }
+}
+
+.navLinkActive {
+    color: #B6EADA;
+    font-family: Roboto;
+    text-decoration: none;
 }
 
 .menuCircles{
     position: absolute;
     display: flex;
     flex-direction: column;
+    height: 80%;
     width: 5%;
     justify-content: center;
-    height: 91%;
-    backdrop-filter: brightness(85%);
 }
 
 .circles{
@@ -33,9 +45,16 @@
     height: 1rem;
     border-radius: 50%;
     margin: 1rem;
-    &:focus{
-        background-color: #B6EADA;
-    }
+}
+
+.circlesActive{
+    background-color: #B6EADA;
+    display: flex;
+    flex-direction: column;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    margin: 1rem;
 }
 
 @media(max-width:475px){
@@ -47,6 +66,17 @@
         backdrop-filter: brightness(100%);
     }
     .menu .navLink{
+        margin-right: 0;
+        font-size: 16px;
+        background-color: #03001C;
+        padding: 10px;
+        border: 1px solid #212121;
+        border-radius: 10px;
+        box-shadow: 1px 3px 1px #06012f,
+                    -1px -1px 1px #5B8FB9;
+    }
+
+    .menu .navLinkActive{
         margin-right: 0;
         font-size: 16px;
         background-color: #03001C;

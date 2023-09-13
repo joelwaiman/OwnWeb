@@ -1,31 +1,58 @@
 .homeSide{
     display: flex;
     align-items: center;
+    max-width: 100%;
+    height: 80vh;
+}
+
+.avatar{
+    display: flex;
     justify-content: center;
-    width: 100%;
-    height: 90vh;
+    width: 50%;
 }
 
 .img{
-    position: relative;
-    right: 50%;
-    max-width: 350px;
+    max-width: 450px;
     animation-name: delayAnimation;
     animation-duration: 2s;
 }
 
-.titleHead h1{
-    position: relative;
-    left: 2%;
+.titleHead{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
     font-family: 'Roboto';
     font-weight: 100;
-    font-size: 40px;
+    font-size: 21px;
     color: white;
     animation-name: delayAnimation;
     animation-duration: 2s;
 }
 
+.titleHead p {
+    padding: 15px 0;
+    width: 90%;
+    opacity: 0.8;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        opacity: 1;
+        transition: all 0.2 ease-in-out;
+    }
+}
+
 .textHome{
+    color: #B6EADA;
+}
+
+.textContact{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 50%;
+}
+
+.iconsHome{
+    font-size: 27px;
     color: #B6EADA;
 }
 
@@ -49,7 +76,7 @@
         position: inherit;
         max-width: 250px;
     }
-    .titleHead h1{
+    .titleHead p{
         position: inherit;
         text-align: center;
         font-size: 16px;

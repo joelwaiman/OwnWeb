@@ -1,8 +1,10 @@
 import React from 'react'
-import './Header.css'
-import { NavLink } from 'react-router-dom'
+import styles from './Header.module.css'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const Header = () => {
+
+    const location = useLocation();
 
     const menu = [
         { id: 0, name: 'HOME', route: "/" },
@@ -12,18 +14,26 @@ const Header = () => {
 
     return (
         <>
-            <div>
-                <nav className='menu'>{menu.map((accs) => {
-                    return <NavLink 
-                    className='navLink'
-                    to={accs.route}>
+            <div className={styles.menu}>
+                <nav className={styles.nav}>{menu.map((accs) => {
+                    return <NavLink
+                        key={accs.id}
+                        className={location.pathname === accs.route ? styles.navLinkActive : styles.navLink}
+                        to={accs.route}>
                         {accs.name}
-                        </NavLink>
+                    </NavLink>
                 })}</nav>
             </div>
-                <nav className='menuCircles'>{menu.map((circ) => {
-                    return <NavLink className='circles' to={circ.route} key={circ.id}><div className='circle'/></NavLink>
-                })}</nav>
+            <div className={styles.menuCircles}>
+                <nav className={styles.menuNav} >{menu.map((circ) => {
+                    return <NavLink
+                        to={circ.route}
+                        key={circ.id}>
+                        <div className={location.pathname === circ.route ? styles.circlesActive : styles.circles} />
+                    </NavLink>
+                })}
+                </nav>
+            </div>
         </>
     )
 }
