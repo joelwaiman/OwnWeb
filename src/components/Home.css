@@ -54,6 +54,7 @@
 .iconsHome{
     font-size: 27px;
     color: #B6EADA;
+    opacity: 1;
 }
 
 @keyframes delayAnimation {
@@ -70,15 +71,22 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10%;
+        height: 85vh;
     }
     .img{
         position: inherit;
         max-width: 250px;
     }
+    .titleHead{
+        align-items: center;
+        width: 90%;
+        font-weight: 300;
+    }
     .titleHead p{
-        position: inherit;
         text-align: center;
         font-size: 16px;
+    }
+    .textContact{
+        display: none;
     }
 }

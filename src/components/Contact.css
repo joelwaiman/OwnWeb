@@ -47,9 +47,10 @@
     .icons-container{
         flex-direction: column;
         justify-content: center;
+        height: 85vh;
     }
     .typeIcons{
-        margin: 30% 0;
+        margin: 10% 0;
     }
     .icon{
         opacity: 1;

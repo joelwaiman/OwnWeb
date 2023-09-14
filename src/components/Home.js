@@ -19,7 +19,7 @@ const Home = () => {
                     </strong> Es un placer que estés aqui.</p>
                 <p>Mi enfoque en el desarrollo front-end se centra en la creación de buenas experiencias visuales. Trabajo activamente en la mejora de la estética y la usabilidad del sitio.</p>
                 <p className="textContact">
-                    Contactame
+                    Contactame:
                     {icons.map((icon) => {
                         return <a
                             key={icon.id}
