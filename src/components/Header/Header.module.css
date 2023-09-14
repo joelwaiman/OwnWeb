@@ -13,6 +13,7 @@
 }
 
 .navLink{
+    border-radius: 7%;
     color: #5B8FB9;
     font-family: Roboto;
     text-decoration: none;
@@ -41,20 +42,24 @@
     display: flex;
     flex-direction: column;
     background-color: #5B8FB9;
-    width: 1rem;
-    height: 1rem;
-    border-radius: 50%;
+    width: 40px;
+    height: 2px;
     margin: 1rem;
+    transition: .3s all ease-in-out;
 }
 
 .circlesActive{
     background-color: #B6EADA;
+    -webkit-box-shadow: 0px 0px 10px 2px #B6EADA;
+    -moz-box-shadow: 0px 0px 10px 2px #B6EADA;
+    box-shadow: 0px 0px 10px 2px #B6EADA;
     display: flex;
     flex-direction: column;
-    width: 1rem;
-    height: 1rem;
+    width: 60px;
+    height: 1px;
     border-radius: 50%;
     margin: 1rem;
+    transition: .3s all ease-in-out;
 }
 
 @media(max-width:475px){
