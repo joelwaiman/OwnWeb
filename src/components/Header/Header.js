@@ -24,12 +24,12 @@ const Header = () => {
                     </NavLink>
                 })}</nav>
             </div>
-            <div className={styles.menuCircles}>
+            <div className={styles.lateralBar}>
                 <nav className={styles.menuNav} >{menu.map((circ) => {
                     return <NavLink
                         to={circ.route}
                         key={circ.id}>
-                        <div className={location.pathname === circ.route ? styles.circlesActive : styles.circles} />
+                        <div className={location.pathname === circ.route ? styles.scriptActive : styles.script} />
                     </NavLink>
                 })}
                 </nav>
