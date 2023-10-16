@@ -29,6 +29,10 @@
     animation-duration: 2s;
 }
 
+.title-1{
+    font-size: 31px;
+}
+
 .titleHead p {
     padding: 15px 0;
     width: 90%;
