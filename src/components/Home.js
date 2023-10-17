@@ -1,11 +1,15 @@
 import React from "react";
+
 import './Home.css'
+
 import image from '../assets/avatar.png'
 import icons from '../assets/icons'
 
+import iconsStack from '../assets/iconsStack'
+
 const Home = () => {
     return (
-        <section className="homeSide">
+        <section className="homeSide" id="Home">
             <div className="avatar">
                 <img
                     className="img"
@@ -17,6 +21,12 @@ const Home = () => {
                     <strong className="textHome"> Joel
                         <br /> Front End Developer <br />
                     </strong> Es un placer que estés aqui.</p>
+                    <div 
+                    className="iconsStack">
+                {iconsStack.map((icns)=>{
+                    return <p key={icns.id} title={icns.title}>{icns.name}</p>
+                })}
+                </div>
                 <p>Mi enfoque en el desarrollo front-end se centra en la creación de buenas experiencias visuales. Trabajo activamente en la mejora de la estética y la usabilidad del sitio.</p>
                 <p className="textContact">
                     Contactame:

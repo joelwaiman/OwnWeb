@@ -5,7 +5,7 @@ import icons from "../assets/icons";
 const Contact = () => {
 
     return (
-        <div className="icons-container">
+        <div className="icons-container" id="Contacto">
             {icons.map((icon) => {
                 return <button
                 className="typeIcons" 

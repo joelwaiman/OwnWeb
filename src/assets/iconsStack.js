@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "./footer.module.css";
 
 import { FaCss3Alt, FaGitAlt, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { SiNextdotjs } from "react-icons/si";
@@ -13,20 +12,4 @@ const iconsTech = [
     {id: 5, name: <SiNextdotjs/>, title: 'NextJS'},
 ]
 
-const Footer = () => {
-    
-    return(
-        <div className={styles.container}>
-            {iconsTech.map((icons)=>{
-                return <p 
-                key={icons.id}
-                className={styles.icons}
-                title={icons.title}>
-                    {icons.name}
-                </p>
-            })}
-        </div>
-    )
-}
-
-export default Footer;
+export default iconsTech;

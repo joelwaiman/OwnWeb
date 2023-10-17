@@ -13,7 +13,7 @@ const Projects = () => {
 
 
   return (
-    <section className="projectCard">
+    <section className="projectCard" id="Proyectos">
       {project.map((card) => {
         return <a key={card.id}  className="link" href={card.link} target="_blank" rel="noopener noreferrer">
           <div class="card-container">
