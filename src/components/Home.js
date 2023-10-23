@@ -21,11 +21,11 @@ const Home = () => {
                     <strong className="textHome"> Joel
                         <br /> Front End Developer <br />
                     </strong> Es un placer que estés aqui.</p>
-                    <div 
+                <div
                     className="iconsStack">
-                {iconsStack.map((icns)=>{
-                    return <p key={icns.id} title={icns.title}>{icns.name}</p>
-                })}
+                    {iconsStack.map((icns) => {
+                        return <p key={icns.id} title={icns.title}>{icns.name}</p>
+                    })}
                 </div>
                 <p>Mi enfoque en el desarrollo front-end se centra en la creación de buenas experiencias visuales. Trabajo activamente en la mejora de la estética y la usabilidad del sitio.</p>
                 <p className="textContact">

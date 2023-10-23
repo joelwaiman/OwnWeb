@@ -65,6 +65,7 @@
     font-size: 27px;
     color: #B6EADA;
     opacity: 1;
+    margin: 0;
 }
 
 @keyframes delayAnimation {
@@ -99,5 +100,8 @@
     }
     .textContact{
         display: none;
+    }
+    .iconsStack{
+        width: 60%;
     }
 }
