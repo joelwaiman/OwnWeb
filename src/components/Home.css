@@ -51,7 +51,9 @@
 }
 
 .textHome{
-    color: #B6EADA;
+    background: -webkit-linear-gradient(40deg, #B6EADA, #5B8FB9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .textContact{

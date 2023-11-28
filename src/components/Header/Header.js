@@ -39,7 +39,6 @@ const Header = () => {
                         key={circ.id}>
                         <div className={location.hash === circ.route ? styles.scriptActive : styles.script} />
                         <p className={location.hash === circ.route? styles.iconActive : styles.icon}>{circ.icon}</p>
-
                     </HashLink>
                 })}
                 </nav>
