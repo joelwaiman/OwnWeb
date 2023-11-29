@@ -44,7 +44,7 @@
 
 .menuNav{
     display: flex;
-    margin: 20px;
+    margin: 30px;
     justify-content: center;
 }
 
@@ -53,6 +53,11 @@
     font-size: 20px;
     color: #5B8FB9;
     transition: .3s all ease-in-out;
+    &:hover{
+        color: #B6EADA;
+        border-radius: 25%;
+        transition: all 0.3s ease;
+    }
 }
 
 .lateralBar .iconActive{
@@ -70,7 +75,7 @@
 
 .lateralBar .scriptActive{
     position: absolute;
-    background-image: linear-gradient( -90deg, rgb(91, 142, 185, 0.1) 25%, rgb(184, 234, 219));
+    background-image: linear-gradient( -90deg, #5b8eb91a 25%, rgb(184, 234, 219));
     width: 50px; 
     height: 50px;
     border-radius: 25%;
