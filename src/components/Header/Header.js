@@ -21,16 +21,6 @@ const Header = () => {
 
     return (
         <>
-            <div className={styles.menu}>
-                <nav className={styles.nav}>{menu.map((accs) => {
-                    return <HashLink smooth
-                        key={accs.id}
-                        className={location.hash === accs.route ? styles.navLinkActive : styles.navLink}
-                        to={accs.route}>
-                        {accs.name}
-                    </HashLink>
-                })}</nav>
-            </div>
             <div className={styles.lateralBar}>
                 <nav>{menu.map((circ) => {
                     return <HashLink smooth

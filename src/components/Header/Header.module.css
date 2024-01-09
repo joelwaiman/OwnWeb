@@ -1,45 +1,13 @@
-.menu{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 100%;
-    padding: 2% 0;
-    background-color: rgb(3, 0, 28, 0.2);
-}
-
-.nav{
-    display: flex;  
-    justify-content: space-between;
-    width: 40%;
-    margin: 0 0 0 50%;
-}
-
-.navLink{
-    border-radius: 7%;
-    color: #5B8FB9;
-    font-family: Roboto;
-    text-decoration: none;
-    &:hover{
-        color: #B6EADA;
-        transition: all 0.3s ease;
-    }
-}
-
-.navLinkActive {
-    color: #B6EADA;
-    font-family: Roboto;
-    text-decoration: none;
-}
-
 .lateralBar{
     position: fixed;
     display: flex;
     flex-direction: column;
-    border-radius: 0 10px 10px 0;
-    height: 80%;
+    border-right: solid 1px #03001C;
+    height: 100vh;
     width: 7%;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 0px 10px 2px #03001C;
 }
 
 .menuNav{
@@ -56,7 +24,6 @@
     &:hover{
         color: #B6EADA;
         border-radius: 25%;
-        transition: all 0.3s ease;
     }
 }
 
@@ -84,7 +51,7 @@
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    transition: .3s all ease-in-out;
+    transition: .3s all ease-out both;
 }
 
 @media(max-width:475px){

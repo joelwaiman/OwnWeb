@@ -32,6 +32,9 @@
 .link {
   text-decoration: none;
   width: 70%;
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 30%;
 }
 
 .img{
@@ -67,6 +70,17 @@
   }
   100%{
       opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  0%{
+      opacity: 0;
+      translate: 0 200px;
+  }
+  100%{
+      opacity: 1;
+      translate: 0 0;
   }
 }
 
