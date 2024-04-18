@@ -12,7 +12,6 @@ const Home = () => {
         <section className="homeSide" id="Home">
             <div className="avatar">
                 <img
-                    className="imgAvatar"
                     src={image}
                     alt="Chico con gafas sonriendo" />
             </div>

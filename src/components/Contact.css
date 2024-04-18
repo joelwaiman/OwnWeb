@@ -1,36 +1,40 @@
-.icons-container {
+.contact-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 80%;
     min-height: 100vh;
+    margin: auto;
 }
 
-.typeIcons {
-    margin: 0 5rem;
-    background-color: transparent;
-    border: none;
-    font-size: 5rem;
+.card-container-contact{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cardIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255,0.02);
+    backdrop-filter: blur(20px);
+    box-shadow: 20px 20px 22px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
     animation-name: delayAnimation;
     animation-duration: 2s;
 }
 
-.icon{
-    color: rgb(230, 230, 230);
-    opacity: 0.5;
-    &:hover{
-        animation: opacity 0.8s infinite alternate;
-        cursor: pointer;
-            }
+.icon svg{
+    bottom: 85px;
+    font-size: 300px;
+    color: #301E67;
 }
 
-@keyframes opacity {
-    0% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-  }
 
 
 @keyframes delayAnimation {
