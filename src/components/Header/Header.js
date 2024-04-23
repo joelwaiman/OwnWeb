@@ -1,7 +1,5 @@
 import React from 'react'
 
-import styles from './Header.module.css'
-
 import { FaHome } from "react-icons/fa";
 import { AiFillProject } from "react-icons/ai";
 import { MdPermContactCalendar } from "react-icons/md";
@@ -14,21 +12,23 @@ const Header = () => {
     const location = useLocation();
 
     const menu = [
-        { id: 0, name: 'HOME', route: "#Home", icon: <FaHome /> },
-        { id: 1, name: 'PROYECTOS', route: "#Proyectos", icon: <AiFillProject /> },
-        { id: 2, name: 'CONTACTO', route: "#Contacto", icon: <MdPermContactCalendar /> }
+        { id: 0, name: 'HOME', route: "#home", icon: <FaHome /> },
+        { id: 1, name: 'PROYECTOS', route: "#proyectos", icon: <AiFillProject /> },
+        { id: 2, name: 'CONTACTO', route: "#contacto", icon: <MdPermContactCalendar /> }
     ]
 
     return (
         <>
-            <div className={styles.lateralBar}>
+            <div className='fixed flex flex-col justify-center items-center shadow-[0px 0px 10px 2px #03001C] border-r-[#03001c] h-[100vh] w-[7%]'>
                 <nav>{menu.map((circ) => {
                     return <HashLink smooth
-                        className={styles.menuNav}
+                        className='flex justify-center m-7'
                         to={circ.route}
                         key={circ.id}>
-                        <div className={location.hash === circ.route ? styles.scriptActive : styles.script} />
-                        <p className={location.hash === circ.route? styles.iconActive : styles.icon}>{circ.icon}</p>
+                        <div className={location.hash === circ.route ? 'absolute bg-gradient-to-tr from-[rgb(182,234,218,0.8)] to-[#5b8eb91a] to-60% w-12 h-12 rounded-[25%] rotate-45' : 'transition-all duration-300 ease-in-out'} />
+                        <p className={location.hash === circ.route? 'flex text-3xl p-3 text-[#e7e7e7] transition-all duration-300 ease-in-out' 
+                        : 
+                        'flex text-xl text-[#5B8FB9] transition-all duration-300 ease-in-out hover:text-[#e7e7e7] rounded-[25%]'}>{circ.icon}</p>
                     </HashLink>
                 })}
                 </nav>

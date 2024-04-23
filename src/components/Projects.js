@@ -1,5 +1,4 @@
 import React from "react";
-import './Projects.css';
 
 import tw from '../assets/tw.jpg';
 import meli from '../assets/meli.jpg';
@@ -19,17 +18,17 @@ const Projects = () => {
 
 
   return (
-    <section className="projectCard" id="Proyectos">
+    <section className="flex flex-col items-center m-auto w-[80%]" id="proyectos">
       {project.map((card) => {
-        return <a key={card.id}  className="link" href={card.link} target="_blank" rel="noopener noreferrer">
-          <div class="card-container">
+        return <a key={card.id}  className="no-underline w-[90%]" href={card.link} target="_blank" rel="noopener noreferrer">
+          <div class="flex items-center bg-[#03001C] border-[#301e67] w-full h-60 rounded-xl my-6 opacity-70 transition-all duration-300 ease-out hover:shadow-cardshadow hover:opacity-100 hover:scale-105">
             <img
-              className="img"
+              className="w-[40%] h-[90%] rounded-xl mx-3"
               alt="Page Preview"
               src={card.img} />
-            <div className="text-card">
-              <h1>{card.name}</h1>
-              <p>{card.description}</p>
+            <div className="flex flex-col justify-evenly text-white w-3/6 min-h-[80%] px-5">
+              <h1 className="bg-gradient-to-r from-[#301E67] to-[#03001C] p-2 rounded-xl">{card.name}</h1>
+              <p className="p-2">{card.description}</p>
             </div>
           </div>
         </a>
