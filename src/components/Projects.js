@@ -26,7 +26,7 @@ const Projects = () => {
               className="w-[40%] h-[90%] rounded-xl mx-3"
               alt="Page Preview"
               src={card.img} />
-            <div className="flex flex-col justify-evenly text-white w-3/6 min-h-[80%] px-5">
+            <div className="flex flex-col justify-evenly text-slate-200/90 w-3/6 min-h-[80%] px-5">
               <h1 className="bg-gradient-to-r from-[#301E67] to-[#03001C] p-2 rounded-xl">{card.name}</h1>
               <p className="p-2">{card.description}</p>
             </div>
