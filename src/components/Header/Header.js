@@ -18,8 +18,7 @@ const Header = () => {
     ]
 
     return (
-        <>
-            <div className='fixed flex flex-col justify-center items-center shadow-[0px 0px 10px 2px #03001C] border-r-[#03001c] h-[100vh] w-[7%]'>
+            <header className='hidden fixed md:flex flex-col justify-center items-center shadow-[0px 0px 10px 2px #03001C] border-r-[#03001c] h-[100vh] w-[7%]'>
                 <nav>{menu.map((circ) => {
                     return <HashLink smooth
                         className='flex justify-center m-7'
@@ -32,8 +31,7 @@ const Header = () => {
                     </HashLink>
                 })}
                 </nav>
-            </div>
-        </>
+            </header>
     )
 }
 

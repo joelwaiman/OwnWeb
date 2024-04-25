@@ -18,17 +18,17 @@ const Projects = () => {
 
 
   return (
-    <section className="flex flex-col items-center m-auto w-[80%]" id="proyectos">
+    <section className="flex flex-col items-center m-auto md:w-[80%] w-[95%]" id="proyectos">
       {project.map((card) => {
-        return <a key={card.id}  className="no-underline w-[90%]" href={card.link} target="_blank" rel="noopener noreferrer">
-          <div class="flex items-center bg-[#03001C] border-[#301e67] w-full h-60 rounded-xl my-6 opacity-70 transition-all duration-300 ease-out hover:shadow-cardshadow hover:opacity-100 hover:scale-105">
+        return <a key={card.id}  className="no-underline md:w-[90%] w-[100%]" href={card.link} target="_blank" rel="noopener noreferrer">
+          <div class="flex flex-col md:flex-row items-center bg-[#03001C] border-[#301e67] w-full md:h-60  rounded-xl my-6 opacity-70 transition-all duration-300 ease-out hover:shadow-cardshadow hover:opacity-100 hover:scale-105">
             <img
-              className="w-[40%] h-[90%] rounded-xl mx-3"
+              className="w-[95%] md:w-[40%] h-[90%] rounded-xl mx-3"
               alt="Page Preview"
               src={card.img} />
-            <div className="flex flex-col justify-evenly text-slate-200/90 w-3/6 min-h-[80%] px-5">
-              <h1 className="bg-gradient-to-r from-[#301E67] to-[#03001C] p-2 rounded-xl">{card.name}</h1>
-              <p className="p-2">{card.description}</p>
+            <div className="flex flex-col justify-evenly text-slate-200/90 w-full md:w-3/6 min-h-[80%] md:px-5">
+              <h1 className="bg-gradient-to-r from-[#301E67] to-[#03001C] p-2 m-2 md:m-0 rounded-xl">{card.name}</h1>
+              <p className="p-2 text-center md:text-start">{card.description}</p>
             </div>
           </div>
         </a>
