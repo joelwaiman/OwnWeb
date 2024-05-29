@@ -14,13 +14,13 @@ const Home = () => {
                     src={image}
                     alt="Chico con gafas sonriendo" />
             </div>
-            <div className="animate-fade-left animate-delay-700 flex flex-col items-center md:items-start text-center md:text-start w-[90%] md:w-1/2 text-xl text-slate-100">
+            <div className="animate-fade-left animate-delay-700 flex flex-col items-center bg-[rgba(255,255,255,0.06)] backdrop-blur-[20px] rounded-2xl shadow-[rgba(0,0,0,0.2)] p-5 md:items-start text-center md:text-start w-[90%] md:w-1/2 text-xl text-slate-100">
                 <p className="text-3xl">Hola, soy
-                    <strong className="bg-gradient-to-tr from-[#B6EADA] to-[#5B8FB9] text-transparent bg-clip-text"> Joel
+                    <strong className="bg-gradient-to-tr from-[#76ABAE] to-[#EEEEEE] text-transparent bg-clip-text"> Joel
                         <br /> Front End Developer <br />
                     </strong> Es un placer que estés aqui.</p>
                 <div
-                    className="flex justify-between w-3/4 text-3xl text-[#B6EADA] py-5 animate-fade">
+                    className="flex justify-between w-3/4 text-3xl text-[#76ABAE] py-5 animate-fade">
                     {iconsStack.map((icns) => {
                         return <p className="hover:scale-110 transition-all duration-300"
                             key={icns.id}
@@ -35,7 +35,7 @@ const Home = () => {
                     {icons.map((icon) => {
                         return <a
                             key={icon.id}
-                            className="text-3xl text-[#B6EADA] hover:scale-110 transition-all duration-300"
+                            className="text-3xl text-[#76ABAE] hover:scale-110 transition-all duration-300"
                             href={icon.route}
                             target="_blank"
                             rel="noopener noreferrer">

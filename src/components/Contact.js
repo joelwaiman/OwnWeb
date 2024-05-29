@@ -14,30 +14,30 @@ const Contact = () => {
                     <img className="md:w-[100%] md:h-[100%] w-[40%] h-[40%] my-2 rounded-[50%] hover:scale-[1.025] ease-in duration-200 border-2 border-slate-200/75 shadow-xl"
                         src={profile}
                         alt="yo" />
-                    <p className="text-l font-thin text-center text-slate-200/90 my-5">
+                    <p className="text-l text-[#EEEEEE] font-thin text-center my-5">
                         @joelwaiman
                         <br />
-                        <span className="font-bold text-xl bg-gradient-to-br from-[#B6EADA] to-[#5B8FB9] text-transparent bg-clip-text">
+                        <span className="font-bold text-xl bg-gradient-to-br from-[#76ABAE] to-[#EEEEEE] text-transparent bg-clip-text">
                             Frontend Developer
                         </span>
                     </p>
                 </article>
 
-                <article className="flex flex-col justify-between min-h-80 md:w-1/2 w-[95%]">
-                    <p className="bg-gradient-to-r from-[rgb(48,30,103,0.3)] to-[#03001C] p-2 rounded-xl text-slate-200/90 text-xl">
+                <article className="flex flex-col text-[#EEEEEE] justify-between min-h-80 md:w-1/2 w-[95%]">
+                    <p className="bg-[#222831] font-bold p-2 rounded-xl text-xl">
                         Sobre mi
                     </p>
-                    <p className="px-2 rounded-xl text-slate-200/90 text-l">
+                    <p className="px-2 rounded-xl font-light text-xl">
                         Con 1 año de experiencia freelance, busco oportunidades como Frontend Developer trainee/junior para aprender y crecer en el ámbito del desarrollo web. Me considero una persona proactiva, con capacidad de aprendizaje y trabajo en equipo.-
                     </p>
-                    <p className="bg-gradient-to-r from-[rgb(48,30,103,0.3)] to-[#03001C] p-2 rounded-xl text-slate-200/90 text-xl">
+                    <p className="bg-[#222831] font-bold p-2 rounded-xl text-xl">
                         Hablemos
                     </p>
 
                     <div className="flex gap-5 justify-between md:justify-start">
                         {icons.map((icon) => {
                             return <div className="flex justify-center items-center px-2">
-                                <a className="text-[#B6EADA] text-6xl hover:scale-105 ease-out duration-200"
+                                <a className="text-[#76ABAE] text-6xl hover:scale-105 ease-out duration-200"
                                     href={icon.route}
                                     target="_blank"
                                     rel="noopener noreferrer">

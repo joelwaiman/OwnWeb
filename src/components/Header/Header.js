@@ -18,21 +18,38 @@ const Header = () => {
     ]
 
     return (
-            <header className='hidden fixed md:flex flex-col justify-center items-center shadow-[0px 0px 10px 2px #03001C] border-r-[#03001c] h-[100vh] w-[7%]'>
-                <nav>{menu.map((circ) => {
-                    return <HashLink smooth
-                        className='flex justify-center m-7'
-                        to={circ.route}
-                        key={circ.id}>
-                        <div className={location.hash === circ.route ? 'absolute bg-gradient-to-tr from-[rgb(182,234,218,0.8)] to-[#5b8eb91a] to-60% w-12 h-12 rounded-[25%] rotate-45' : 'transition-all duration-300 ease-in-out'} />
-                        <p className={location.hash === circ.route? 'flex text-3xl p-3 text-[#e7e7e7] transition-all duration-300 ease-in-out' 
-                        : 
-                        'flex text-xl text-[#5B8FB9] transition-all duration-300 ease-in-out hover:text-[#e7e7e7] rounded-[25%]'}>{circ.icon}</p>
-                    </HashLink>
+        <header className='hidden fixed md:flex flex-col justify-center items-center h-[100vh] w-[10%]'>
+            <nav className='flex flex-col gap-10 items-start'>
+                {menu.map((circ) => {
+                    return (
+                        <HashLink
+                            smooth
+                            to={circ.route}
+                            key={circ.id}
+                            className='relative'
+                        >
+                            {location.hash === circ.route && (
+                                <div className='absolute top-3 -right-3 w-10 h-10 bg-[#76ABAE] rounded-xl transition-transform duration-1000 ease-in-out'
+                                    style={{ zIndex: -1 }} />
+                            )}
+                            <div
+                                className={
+                                    location.hash === circ.route
+                                        ? 'flex items-center gap-3 bg-[rgba(34,40,49,0.7)] backdrop-blur-[20px] p-5 rounded-xl text-[#e7e7e7] transition-all duration-500 ease-in-out relative'
+                                        : 'flex items-center gap-3 text-[#76ABAE] px-5 transition-all duration-500 ease-in-out hover:text-[#e7e7e7] rounded-[25%] relative'
+                                }
+                            >
+                                <p className>{circ.icon}</p>
+                                <p className=''>{circ.name}</p>
+                            </div>
+                        </HashLink>
+                    );
                 })}
-                </nav>
-            </header>
-    )
+            </nav>
+        </header>
+    );
+    
+
 }
 
 export default Header;
