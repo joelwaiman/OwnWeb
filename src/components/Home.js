@@ -11,10 +11,10 @@ import iconsStack from '../assets/iconsStack'
 const Home = () => {
 
     return (
-        <section className="md:w-[80%] w-full m-auto min-h-screen"
+        <section className="flex flex-col-reverse justify-center md:w-[80%] w-full m-auto min-h-screen"
             id="home"
         >
-            <div className="flex items-center w-[90%] md:w-[90%] m-auto my-12 md:order-1 order-1">
+            <div className="flex items-center w-[90%] md:w-[90%] mx-auto py-12 md:order-1 order-1">
                 <h1 className="text-6xl text-[#EEEEEE] font-bold inline-block">Bienvenidos</h1>
                 <hr className="flex-grow ml-4 bg-[#EEEEEE] border-0 h-[1px]" />
             </div>

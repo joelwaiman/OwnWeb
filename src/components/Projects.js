@@ -76,19 +76,19 @@ const Projects = () => {
             {project.map((card) => {
                 return (
                     <a key={card.id} className="no-underline" href={card.link} target="_blank" rel="noopener noreferrer">
-                        <div className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start bg-[#31363F] border border-[rgba(238,238,238,0.5)] w-full md:h-60 rounded-xl my-6 opacity-70 transition-all duration-300 ease-out hover:shadow-cardshadow hover:opacity-100 hover:scale-[1.025]">
+                        <div className="flex flex-col md:flex-row items-center justify-center md:justify-start bg-[#31363F] border border-[rgba(238,238,238,0.5)] w-full md:h-fit rounded-xl my-6 opacity-70 transition-all duration-300 ease-out hover:shadow-cardshadow hover:opacity-100 hover:scale-[1.025]">
                             <img
-                                className="w-[95%] md:w-[30%] h-[90%] rounded-xl m-3"
+                                className="w-[95%] md:w-[40%] rounded-xl m-3"
                                 alt="Page Preview"
                                 src={card.img}
                             />
-                            <div className="flex flex-col justify-between text-[#EEEEEE] w-full md:w-3/6 min-h-[90%] md:px-5">
+                            <div className="flex flex-col justify-between text-[#EEEEEE] w-full md:w-3/6 gap-5 min-h-full md:px-5">
                                 <header className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start p-2 m-2 md:m-0 rounded-xl">
                                     <h1 className="text-4xl font-bold text-[#76ABAE]">{card.name}</h1>
                                     <h4 className="mx-5 p-2 bg-[#222831] rounded-xl">{card.year}</h4>
                                 </header>
                                 <p className="font-light px-2 text-center md:text-start">{card.description}</p>
-                                <div className="flex justify-center md:justify-start gap-4 py-5">
+                                <div className="flex justify-center md:flex-wrap md:justify-start gap-4 pb-5">
                                     {card.techs.map((tech) => {
                                         return (
                                             <span className="p-2 bg-[#222831] rounded-xl" key={tech}>

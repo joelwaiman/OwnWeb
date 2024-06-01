@@ -2,8 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-*{margin: 0;
-  padding: 0;}
+*{
+  margin: 0;
+  padding: 0;
+}
 
 html{
   min-height: 100vh;
