@@ -68,9 +68,9 @@ const Projects = () => {
 
   return (
     <section className="flex flex-col items-center m-auto md:w-[80%] w-[95%]" id="proyectos">
-        <div className="flex items-center w-[90%] my-12">
+        <div className="flex items-center justify-center w-[90%] my-12">
             <h1 className="text-6xl text-[#EEEEEE] font-bold inline-block">Proyectos</h1>
-            <hr className="flex-grow ml-4 bg-[#EEEEEE] border-0 h-[1px]" />
+            <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-[#EEEEEE] md:border-0 md:h-[1px]" />
         </div>
         <div className="flex flex-col-reverse md:w-[80%] w-[100%]">
             {project.map((card) => {

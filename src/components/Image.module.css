@@ -1,6 +1,17 @@
-.image{
+/* Image.module.css */
+.image {
   width: 60%;
-  -webkit-mask-image: linear-gradient( black 70%, transparent);
-  mask-image: linear-gradient( black 70%, transparent);
+  -webkit-mask-image: linear-gradient(black 70%, transparent);
+  mask-image: linear-gradient(black 70%, transparent);
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
