@@ -1,4 +1,4 @@
-import Header from './components/Header/Header';
+import { Header } from './components/Header/Header';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
@@ -9,9 +9,9 @@ function App() {
   return (
     <BrowserRouter>
       <Header />
-        <Home />
-        <Projects />
-        <Contact />
+      <Home />
+      <Projects />
+      <Contact />
     </BrowserRouter>
 
   )

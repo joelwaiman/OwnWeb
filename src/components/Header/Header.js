@@ -7,7 +7,7 @@ import { MdPermContactCalendar } from "react-icons/md";
 import { useLocation } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 
-const Header = () => {
+export const Header = () => {
 
     const location = useLocation();
 
@@ -48,8 +48,4 @@ const Header = () => {
             </nav>
         </header>
     );
-    
-
 }
-
-export default Header;
