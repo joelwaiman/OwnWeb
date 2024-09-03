@@ -3,8 +3,13 @@ module.exports = {
   content: ["./src/**/*.{html,js,jsx}"],
   theme: {
     extend: {
-      boxShadow: {
-        'cardshadow': '0px 0px 10px 2px rgb(118,171,174)',
+      colors: {
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        dark: 'var(--dark)',
+        mid: 'var(--mid)',
+        text: 'var(--text-color)',
+        glassmorph: 'var(--card-glassmorph)'
       }
     },
   },

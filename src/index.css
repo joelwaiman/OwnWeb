@@ -11,13 +11,25 @@ html{
   min-height: 100vh;
 }
 
+@layer base {
+  :root {
+    --color-primary: #57707A;
+    --color-secondary: #c5bac4;
+    --dark: #191d23;
+    --mid: #989daa;
+    --text-color: #dedcdc;
+    --card-glassmorph: rgba(158, 163, 169, 0.06);
+  }
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'American Captain',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: linear-gradient(#222831, #31363F);
+  background-color: var(--dark);
+  color: var(--text-color);
 }
 
 

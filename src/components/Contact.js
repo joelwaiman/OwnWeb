@@ -9,33 +9,33 @@ const Contact = () => {
         <section className="flex flex-col-reverse justify-center items-center max-w-[90%] md:max-w-[80%] min-h-[100vh] m-auto"
             id="contacto">
             <div className="flex items-center justify-center w-[90%] md:w-[90%] mx-auto py-12 order-1">
-                <h1 className="text-6xl text-[#EEEEEE] font-bold inline-block">Sobre mi</h1>
-                <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-[#EEEEEE] md:border-0 md:h-[1px]" />
+                <h1 className="text-6xl font-bold inline-block">Sobre mi</h1>
+                <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-text md:border-0 md:h-[1px]" />
             </div>
 
-            <div className="relative flex md:flex-row flex-col p-3 my-10 justify-evenly items-center overflow-hidden max-w-[90%] md:max-w-[80%] md:min-h-full min-h-[700px] gap-5 bg-[rgba(255,255,255,0.06)] backdrop-blur-[20px] rounded-2xl shadow-[rgba(0,0,0,0.2)]">
+            <div className="relative flex md:flex-row flex-col p-3 my-10 justify-evenly items-center overflow-hidden max-w-[90%] md:max-w-[80%] md:min-h-full min-h-[700px] gap-5 bg-glassmorph backdrop-blur-[20px] rounded-2xl shadow-[rgba(0,0,0,0.2)]">
 
                 <article className="flex flex-col md:w-1/4 min-h-80 items-center justify-center md:justify-between ">
-                    <img className="md:w-[100%] md:h-[100%] w-[40%] h-[40%] my-2 rounded-[50%] hover:scale-[1.025] ease-in duration-200 border-2 border-slate-200/75 shadow-xl"
+                    <img className="md:w-[100%] md:h-[100%] w-[40%] h-[40%] my-2 rounded-[50%] hover:scale-[1.025] ease-in duration-200 border-2 border-mid shadow-xl"
                         src={profile}
                         alt="yo" />
-                    <p className="text-l text-[#EEEEEE] font-thin text-center my-5">
+                    <p className="text-l font-thin text-center my-5">
                         @joelwaiman
                         <br />
-                        <span className="font-bold text-xl bg-gradient-to-br from-[#76ABAE] to-[#EEEEEE] text-transparent bg-clip-text">
+                        <span className="font-bold text-xl bg-gradient-to-br from-primary to-secondary text-transparent bg-clip-text">
                             Frontend Developer
                         </span>
                     </p>
                 </article>
 
-                <article className="flex flex-col text-[#EEEEEE] justify-between min-h-80 md:w-1/2 w-[95%]">
-                    <p className="bg-[#222831] font-bold p-2 my-5 rounded-xl text-xl">
+                <article className="flex flex-col justify-between min-h-80 md:w-1/2 w-[95%]">
+                    <p className="bg-dark font-bold p-2 my-5 rounded-xl text-xl">
                         Sobre mi
                     </p>
                     <p className="px-2 rounded-xl font-light text-xl">
                         Con 1 año de experiencia freelance, busco oportunidades como Frontend Developer trainee/junior para aprender y crecer en el ámbito del desarrollo web. Me considero una persona proactiva, con capacidad de aprendizaje y trabajo en equipo.-
                     </p>
-                    <p className="bg-[#222831] font-bold p-2 my-5 rounded-xl text-xl">
+                    <p className="bg-dark font-bold p-2 my-5 rounded-xl text-xl">
                         Hablemos
                     </p>
 
@@ -43,7 +43,7 @@ const Contact = () => {
                         {icons.map((icon) => {
                             return <div className="flex justify-center items-center px-2"
                             key={icon}>
-                                <a className="text-[#76ABAE] text-6xl hover:scale-105 ease-out duration-200"
+                                <a className="text-primary text-6xl hover:scale-105 ease-out duration-200"
                                     href={icon.route}
                                     target="_blank"
                                     rel="noopener noreferrer">

@@ -18,7 +18,7 @@ export const Header = () => {
     ]
 
     return (
-        <header className='hidden fixed md:flex flex-col justify-center border-r-2 border-[rgba(33,34,38,0.5)] items-center h-[100vh] w-[12%]'>
+        <header className='hidden fixed md:flex flex-col justify-center border-r-2 border-[rgba(52,56,52,0.5)] items-center h-[100vh] w-[12%]'>
             <nav className='flex flex-col gap-10'>
                 {menu.map((circ) => {
                     return (
@@ -29,14 +29,14 @@ export const Header = () => {
                             className='relative w-full'
                         >
                             {location.hash === circ.route && (
-                                <div className='absolute top-3 -right-3 w-10 h-10 bg-[#76ABAE] rounded-xl transition-transform duration-1000 ease-in-out'
+                                <div className='absolute top-3 -right-3 w-10 h-10 bg-secondary rounded-xl animate-fade-right'
                                     style={{ zIndex: -1 }} />
                             )}
                             <div
                                 className={
                                     location.hash === circ.route
-                                        ? 'flex items-center gap-3 bg-[rgba(34,40,49,0.7)] backdrop-blur-[20px] p-5 rounded-xl text-[#e7e7e7] transition-all duration-500 ease-in-out relative'
-                                        : 'flex items-center gap-3 text-[#76ABAE] p-5 transition-all duration-500 ease-in-out hover:text-[#e7e7e7] rounded-[25%] relative'
+                                        ? 'flex items-center gap-3 bg-[rgba(34,40,49,0.7)] backdrop-blur-[20px] p-5 rounded-xl text-secondary transition-all duration-500 ease-in-out relative'
+                                        : 'flex items-center gap-3 text-primary p-5 transition-all duration-500 ease-in-out hover:text-secondary rounded-[25%] relative'
                                 }
                             >
                                 <p>{circ.icon}</p>

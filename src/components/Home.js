@@ -15,8 +15,8 @@ const Home = () => {
             id="home"
         >
             <header className="flex items-center justify-center w-[90%] md:w-[90%] mx-auto py-12 md:order-1 order-1">
-                <h1 className="text-6xl text-[#EEEEEE] font-bold inline-block">Bienvenidos</h1>
-                <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-[#EEEEEE] md:border-0 md:h-[1px]" />
+                <h1 className="text-6xl text-text font-bold inline-block">Bienvenidos</h1>
+                <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-text md:border-0 md:h-[1px]" />
             </header>
             <section className="flex flex-col md:flex-row md:justify-center justify-evenly items-center" >
                 <article className="flex justify-center md:w-[45%] w-1/2 animate-fade-right animate-delay-700">
@@ -24,13 +24,13 @@ const Home = () => {
                         src={image}
                         alt="Chico con gafas sonriendo" />
                 </article>
-                <article className="animate-fade-left animate-delay-700 flex flex-col items-center bg-[rgba(255,255,255,0.06)] backdrop-blur-[20px] rounded-2xl shadow-[rgba(0,0,0,0.2)] p-5 md:items-start text-center md:text-start w-[90%] md:w-1/2 text-xl text-slate-100">
+                <article className="animate-fade-left animate-delay-700 flex flex-col text-text items-center bg-glassmorph backdrop-blur-[20px] rounded-2xl shadow-[rgba(0,0,0,0.2)] p-5 md:items-start text-center md:text-start w-[90%] md:w-1/2 text-xl">
                     <p className="text-3xl">Hola, soy
-                        <strong className="bg-gradient-to-tr from-[#76ABAE] to-[#EEEEEE] text-transparent bg-clip-text"> Joel
+                        <strong className="bg-gradient-to-tr from-primary to-secondary text-transparent bg-clip-text"> Joel
                             <br /> Front End Developer <br />
                         </strong> Es un placer que estés aqui.</p>
                     <div
-                        className="flex justify-between w-full md:w-3/4 text-3xl text-[#76ABAE] py-5 animate-fade">
+                        className="flex w-full md:w-3/4 text-3xl text-secondary py-5 animate-fade">
                         {iconsStack.map((icns) => {
                             return <div className={styles.icons_container}>
                             <span className={styles.icons}
@@ -48,7 +48,7 @@ const Home = () => {
                         {icons.map((icon) => {
                             return <a
                                 key={icon.id}
-                                className="text-3xl text-[#76ABAE] hover:scale-110 transition-all duration-300"
+                                className="text-3xl text-primary hover:scale-110 transition-all duration-300"
                                 href={icon.route}
                                 target="_blank"
                                 rel="noopener noreferrer">

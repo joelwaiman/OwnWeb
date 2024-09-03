@@ -23,7 +23,7 @@ const Projects = () => {
       name: 'E-Commerce',
       img: chonkee,
       link: 'https://ecommerce-react-ten-phi.vercel.app/',
-      description: 'Proyecto de fin de curso, E-commerce completo creado con ReactJS. Uso de Hooks, States, Context y mas. Firebase como base de datos.',
+      description: 'E-commerce completo creado con ReactJS. Uso de Hooks, States, Context y mas. Firebase como base de datos.',
       year: '2022',
       techs: ['Javascript', 'ReactJS', 'Firestore']
     },
@@ -69,23 +69,23 @@ const Projects = () => {
   return (
     <section className="flex flex-col items-center m-auto md:w-[80%] w-[95%]" id="proyectos">
         <div className="flex items-center justify-center w-[90%] my-12">
-            <h1 className="text-6xl text-[#EEEEEE] font-bold inline-block">Proyectos</h1>
-            <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-[#EEEEEE] md:border-0 md:h-[1px]" />
+            <h1 className="text-6xl font-bold inline-block">Proyectos</h1>
+            <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-text md:border-0 md:h-[1px]" />
         </div>
         <div className="flex flex-col-reverse md:w-[80%] w-[100%]">
             {project.map((card) => {
                 return (
                     <a key={card.id} className="no-underline" href={card.link} target="_blank" rel="noopener noreferrer">
-                        <div className="flex flex-col md:flex-row items-center justify-center md:justify-start bg-[#31363F] border border-[rgba(238,238,238,0.5)] w-full md:h-fit rounded-xl my-6 opacity-70 transition-all duration-300 ease-out hover:shadow-cardshadow hover:opacity-100 hover:scale-[1.025]">
+                        <div className="flex flex-col md:flex-row items-center justify-center md:justify-start bg-glassmorph border border-mid w-full md:h-fit rounded-xl my-6 opacity-70 transition-all duration-300 ease-out hover:shadow-cardshadow hover:opacity-100 hover:scale-[1.025]">
                             <img
                                 className="w-[95%] md:w-[40%] rounded-xl m-3"
                                 alt="Page Preview"
                                 src={card.img}
                             />
-                            <div className="flex flex-col justify-between text-[#EEEEEE] w-full md:w-3/6 gap-5 min-h-full md:px-5">
-                                <header className="flex flex-col md:flex-row items-center md:items-start justify-center md:justify-start p-2 m-2 md:m-0 rounded-xl">
-                                    <h1 className="text-4xl font-bold text-[#76ABAE]">{card.name}</h1>
-                                    <h4 className="mx-5 p-2 bg-[#222831] rounded-xl">{card.year}</h4>
+                            <div className="flex flex-col justify-between w-full md:w-3/6 gap-5 min-h-full md:px-5">
+                                <header className="flex flex-col gap-4 md:flex-row items-center md:items-start justify-center md:justify-start p-2 m-2 md:m-0 rounded-xl">
+                                    <h1 className="text-4xl font-bold text-primary">{card.name}</h1>
+                                    <h4 className="p-2 bg-dark rounded-xl">{card.year}</h4>
                                 </header>
                                 <p className="font-light px-2 text-center md:text-start">{card.description}</p>
                                 <div className="flex justify-center md:flex-wrap md:justify-start gap-4 pb-5">

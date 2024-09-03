@@ -1,8 +1,8 @@
 /* Image.module.css */
 .image {
   width: 60%;
-  -webkit-mask-image: linear-gradient(black 70%, transparent);
-  mask-image: linear-gradient(black 70%, transparent);
+  -webkit-mask-image: linear-gradient(black 80%, transparent);
+  mask-image: radial-gradient(black 50%, transparent 72%);
   opacity: 0;
   animation: fadeIn 2s ease-in-out forwards;
 }
