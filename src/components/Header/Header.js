@@ -18,7 +18,7 @@ export const Header = () => {
     ]
 
     return (
-        <header className='hidden fixed md:flex flex-col justify-center border-r-2 border-[rgba(52,56,52,0.5)] items-center h-[100vh] w-[12%]'>
+        <header className='hidden fixed lg:flex flex-col justify-center border-r-2 border-[rgba(52,56,52,0.5)] items-center h-[100vh] w-[12%]'>
             <nav className='flex flex-col gap-10'>
                 {menu.map((circ) => {
                     return (
