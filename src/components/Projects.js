@@ -74,53 +74,55 @@ const Projects = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 justify-items-center md:w-[80%] max-w-full min-h-full flex-wrap">
         {project
-        .sort((a, b) => b.year - a.year)
-        .map((card) => {
-          return (
-            <div key={card.id}
-              className="h-80 w-fit border-2 border-primary rounded-[1.5em] bg-gradient-to-br from-primary to-secondary/10 text-text p-[1em] flex justify-between items-left flex-col gap-[0.75em] backdrop-blur-[12px]"
-            >
-              <div>
-                <h1 className="text-[2em] font-medium">{card.name}</h1>
-                <p className="text-[0.85em]">
-                  {card.description}
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-1">
-                {card.techs.map((tech)=>{
-                  return <span key={tech}
-                  className="h-fit w-fit px-[1em] py-[0.25em] border-[1px] border-mid rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden">
-                  {tech}
-                  </span>
-                })}
-              </div>
-
-              <span className="h-fit w-fit px-[1em] py-[0.25em] bg-dark rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden">{card.year}</span>
-
-              <a
-              href={card.link}
-                className="h-10 w-fit px-[1em] py-[0.25em] border-[1px] rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden group hover:translate-y-[0.125em] duration-200 backdrop-blur-[12px]"
+          .sort((a, b) => b.year - a.year)
+          .map((card) => {
+            return (
+              <div key={card.id}
+                className="h-80 w-fit border-2 border-primary rounded-[1.5em] bg-gradient-to-br from-primary to-secondary/10 text-text p-[1em] flex justify-between items-left flex-col gap-[0.75em] backdrop-blur-[12px]"
               >
-                <p>App</p>
-                <svg
-                  className="w-6 h-6 group-hover:translate-x-[10%] duration-300"
-                  stroke="currentColor"
-                  stroke-width="1"
-                  viewBox="0 0 24 24"
-                  fill="white"
-                  xmlns="http://www.w3.org/2000/svg"
+                <div>
+                  <h1 className="text-[2em] font-medium">{card.name}</h1>
+                  <p className="text-[0.85em]">
+                    {card.description}
+                  </p>
+                </div>
+
+                <div className="flex flex-wrap gap-1">
+                  {card.techs.map((tech) => {
+                    return <span key={tech}
+                      className="h-fit w-fit px-[1em] py-[0.25em] border-[1px] border-mid rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden">
+                      {tech}
+                    </span>
+                  })}
+                </div>
+
+                <span className="h-fit w-fit px-[1em] py-[0.25em] bg-dark rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden">{card.year}</span>
+
+                <a
+                  href={card.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="h-10 w-fit px-[1em] py-[0.25em] border-[1px] rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden group hover:translate-y-[0.125em] duration-200 backdrop-blur-[12px]"
                 >
-                  <path
-                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                    stroke-linejoin="round"
-                    stroke-linecap="round"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          );
-        })}
+                  <p>App</p>
+                  <svg
+                    className="w-6 h-6 group-hover:translate-x-[10%] duration-300"
+                    stroke="currentColor"
+                    stroke-width="1"
+                    viewBox="0 0 24 24"
+                    fill="white"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                      stroke-linejoin="round"
+                      stroke-linecap="round"
+                    ></path>
+                  </svg>
+                </a>
+              </div>
+            );
+          })}
       </div>
     </section>
   );
