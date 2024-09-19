@@ -67,57 +67,56 @@ const Projects = () => {
 
 
   return (
-    <section className="flex flex-col items-center min-h-full m-auto md:w-[80%] w-[95%]" id="proyectos">
-      <div className="flex items-center justify-center w-[90%] my-12">
-        <h1 className="text-6xl font-bold inline-block">Proyectos</h1>
-        <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-text md:border-0 md:h-[1px]" />
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 gap-4 justify-items-center md:w-[80%] max-w-full min-h-full flex-wrap">
+    <section className="flex flex-col items-center min-h-screen m-auto lg:w-[80%] max-w-[95%] text-text gap-10" id="proyectos">
+      <h1 className="text-4xl md:text-6xl font-bold inline-block my-5">Proyectos</h1>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[80%] min-h-full">
         {project
           .sort((a, b) => b.year - a.year)
           .map((card) => {
             return (
               <div key={card.id}
-                className="h-80 w-fit border-2 border-primary rounded-[1.5em] bg-gradient-to-br from-primary to-secondary/10 text-text p-[1em] flex justify-between items-left flex-col gap-[0.75em] backdrop-blur-[12px]"
+                className="w-full border-2 border-primary rounded-2xl bg-gradient-to-br from-primary to-secondary/10 text-text p-6 flex flex-col justify-between gap-4 backdrop-blur-md hover:scale-[1.025] transition-transform duration-200"
               >
                 <div>
-                  <h1 className="text-[2em] font-medium">{card.name}</h1>
-                  <p className="text-[0.85em]">
+                  <h1 className="text-2xl font-semibold">{card.name}</h1>
+                  <p className="text-sm md:text-base mt-2">
                     {card.description}
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-1">
-                  {card.techs.map((tech) => {
-                    return <span key={tech}
-                      className="h-fit w-fit px-[1em] py-[0.25em] border-[1px] border-mid rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden">
+                <div className="flex flex-wrap gap-2">
+                  {card.techs.map((tech) => (
+                    <span key={tech}
+                      className="px-3 py-1 text-xs md:text-sm border border-mid rounded-full">
                       {tech}
                     </span>
-                  })}
+                  ))}
                 </div>
 
-                <span className="h-fit w-fit px-[1em] py-[0.25em] bg-dark rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden">{card.year}</span>
+                <span className="px-3 py-1 bg-dark rounded-full w-fit text-xs md:text-sm">
+                  {card.year}
+                </span>
 
                 <a
                   href={card.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="h-10 w-fit px-[1em] py-[0.25em] border-[1px] rounded-full flex justify-center items-center gap-[0.5em] overflow-hidden group hover:translate-y-[0.125em] duration-200 backdrop-blur-[12px]"
-                >
-                  <p>App</p>
+                  className="mt-4 px-4 py-2 border rounded-full flex items-center justify-center gap-2 bg-transparent hover:bg-primary text-text hover:text-white transition-all duration-200">
+                  <span>Ver Proyecto</span>
                   <svg
-                    className="w-6 h-6 group-hover:translate-x-[10%] duration-300"
+                    className="w-5 h-5"
                     stroke="currentColor"
-                    stroke-width="1"
+                    strokeWidth="1"
                     viewBox="0 0 24 24"
-                    fill="white"
+                    fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
                       d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
-                      stroke-linejoin="round"
-                      stroke-linecap="round"
-                    ></path>
+                      strokeLinejoin="round"
+                      strokeLinecap="round"
+                    />
                   </svg>
                 </a>
               </div>
@@ -125,8 +124,9 @@ const Projects = () => {
           })}
       </div>
     </section>
-  );
 
+
+  );
 }
 
 export default Projects;

@@ -18,8 +18,8 @@ export const Header = () => {
     ]
 
     return (
-        <header className='hidden fixed lg:flex flex-col justify-center border-r-2 border-[rgba(52,56,52,0.5)] items-center h-[100vh] w-[12%]'>
-            <nav className='flex flex-col gap-10'>
+        <header className='hidden fixed lg:flex flex-col justify-center border-r-2 border-[rgba(52,56,52,0.5)] items-center h-[100vh]'>
+            <nav className='flex flex-col gap-10 px-5'>
                 {menu.map((circ) => {
                     return (
                         <HashLink

@@ -6,12 +6,9 @@ import profile from '../assets/profile.webp'
 const Contact = () => {
 
     return (
-        <section className="flex flex-col-reverse justify-center items-center max-w-[90%] md:max-w-[80%] min-h-[100vh] m-auto"
+        <section className="flex flex-col justify-center items-center max-w-[100%] lg:max-w-[80%] min-h-[100vh] m-auto"
             id="contacto">
-            <div className="flex items-center justify-center w-[90%] md:w-[90%] mx-auto py-12 order-1">
                 <h1 className="text-6xl font-bold inline-block">Sobre mi</h1>
-                <hr className="hidden md:flex md:flex-grow md:ml-4 md:bg-text md:border-0 md:h-[1px]" />
-            </div>
 
             <div className="relative flex md:flex-row flex-col p-3 my-10 justify-evenly items-center overflow-hidden max-w-[90%] md:max-w-[80%] md:min-h-full min-h-[700px] gap-5 bg-glassmorph backdrop-blur-[20px] rounded-2xl shadow-[rgba(0,0,0,0.2)]">
 
@@ -33,7 +30,7 @@ const Contact = () => {
                         Sobre mi
                     </p>
                     <p className="px-2 rounded-xl font-light text-xl">
-                        Con 1 año de experiencia freelance, busco oportunidades como Frontend Developer trainee/junior para aprender y crecer en el ámbito del desarrollo web. Me considero una persona proactiva, con capacidad de aprendizaje y trabajo en equipo.-
+                        Busco oportunidades como Frontend Developer para aprender y crecer en el ámbito del desarrollo web. Me considero una persona proactiva, con capacidad de aprendizaje y trabajo en equipo.-
                     </p>
                     <p className="bg-dark font-bold p-2 my-5 rounded-xl text-xl">
                         Hablemos
