@@ -35,7 +35,7 @@ const Home = () => {
             <h1
                 className="sticky text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] opacity-20 font-extrabold outline-text"
             >
-                Welcome
+                Welcome.
             </h1>
 
             <div className="relative px-4 md:px-6 z-10 max-w-full lg:max-w-[85%]">
@@ -43,7 +43,7 @@ const Home = () => {
                     <div className="flex justify-center w-full md:w-3/4">
                         <img
                             alt="Me"
-                            className="w-1/2 lg:w-4/5 aspect-square overflow-hidden rounded-xl object-cover object-center border-4 border-gray-400/20 lg:rotate-3 lg:hover:rotate-0 transition-all duration-500 lg:hover:border-secondary lg:hover:shadow-[0_0_30px_0_rgba(197,186,196,0.3)]"
+                            className="w-3/4 lg:w-4/5 aspect-square overflow-hidden rounded-xl object-cover object-center border-4 border-gray-400/20 lg:rotate-3 lg:hover:rotate-0 transition-all duration-500 lg:hover:border-secondary lg:hover:shadow-[0_0_30px_0_rgba(197,186,196,0.3)]"
                             height="600"
                             src={image}
                             width="600"
@@ -71,14 +71,22 @@ const Home = () => {
                                 ))}
                             </div>
                         )}
-                        <p className="text-xl">Mi enfoque en el desarrollo front-end se centra en la creación de buenas experiencias visuales. Trabajo activamente en la mejora de la estética y la usabilidad del sitio.</p>
+                        <p className="text-xl font-normal">Mi enfoque en el desarrollo front-end se centra en la creación de buenas experiencias visuales. Trabajo activamente en la mejora de la estética y la usabilidad del sitio.</p>
                         {icons.length > 0 && (
-                            <div className="flex justify-center items-stretch gap-4 py-5">
-                                Contactame:
+                            <div className="flex justify-center items-center gap-4 py-5">
+                                <p className="relative font-medium text-2xl group">
+                                    <span className="relative z-10">
+                                        Contáctame
+                                    </span>
+                                    <span
+                                        className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#a88f85] transition-all duration-300 ease-in-out group-hover:w-full"
+                                        aria-hidden="true"
+                                    ></span>
+                                </p>
                                 {icons.map((icon) => (
                                     <a
                                         key={icon.id}
-                                        className="text-3xl text-primary hover:scale-110 transition-all duration-300"
+                                        className="text-4xl text-primary hover:scale-110 hover:text-secondary transition-all duration-300"
                                         href={icon.route}
                                         target="_blank"
                                         rel="noopener noreferrer"

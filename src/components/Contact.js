@@ -49,7 +49,7 @@ const Contact = () => {
                         {icons.map((icon) => {
                             return <div className="flex justify-center items-center px-2"
                                 key={icon}>
-                                <a className="text-primary text-6xl hover:scale-105 ease-out duration-200"
+                                <a className="text-primary hover:text-secondary text-6xl hover:scale-105 ease-out duration-200"
                                     href={icon.route}
                                     target="_blank"
                                     rel="noopener noreferrer">
