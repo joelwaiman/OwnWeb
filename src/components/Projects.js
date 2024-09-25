@@ -68,15 +68,25 @@ const Projects = () => {
 
   return (
     <section className="flex flex-col items-center min-h-screen m-auto lg:w-[80%] max-w-[95%] text-text gap-10" id="proyectos">
-      <h1 className="text-4xl md:text-6xl font-bold inline-block my-5">Proyectos</h1>
+      {/* TEXTO BACKGROUND */}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[80%] min-h-full">
+      <style jsx>{`
+                .outline-text {
+                -webkit-text-stroke: 2px #c5bac4;
+                -webkit-text-fill-color: transparent;
+                }
+            `}</style>
+            <h1 className="sticky mb-10 text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] opacity-20 -z-10 font-extrabold outline-text">
+                Projects.
+            </h1>
+
+      <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[80%] min-h-full">
         {project
           .sort((a, b) => b.year - a.year)
           .map((card) => {
             return (
               <div key={card.id}
-                className="w-full border-2 border-primary rounded-2xl bg-gradient-to-br from-primary to-secondary/10 text-text p-6 flex flex-col justify-between gap-4 backdrop-blur-md hover:scale-[1.025] transition-transform duration-200"
+                className="w-full border-2 border-primary bg-glassmorph backdrop-blur-md backdrop-opacity-80 rounded-2xl shadow-[rgba(0,0,0,0.2)] text-text p-6 flex flex-col justify-between gap-4 transition-transform duration-200"
               >
                 <div>
                   <h1 className="text-2xl font-semibold">{card.name}</h1>
@@ -102,7 +112,7 @@ const Projects = () => {
                   href={card.link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="mt-4 px-4 py-2 border rounded-full flex items-center justify-center gap-2 bg-transparent hover:bg-primary text-text hover:text-white transition-all duration-200">
+                  className="mt-4 px-4 py-2 border rounded-full flex items-center justify-center gap-2 bg-transparent lg:hover:shadow-[0_0_10px_0_rgba(197,186,196,0.3)] hover:border-primary text-text transition-all duration-200">
                   <span>Ver Proyecto</span>
                   <svg
                     className="w-5 h-5"

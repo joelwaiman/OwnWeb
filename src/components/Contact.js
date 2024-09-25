@@ -8,9 +8,18 @@ const Contact = () => {
     return (
         <section className="flex flex-col justify-center items-center max-w-[100%] lg:max-w-[80%] min-h-[100vh] m-auto"
             id="contacto">
-                <h1 className="text-6xl font-bold inline-block">Sobre mi</h1>
 
-            <div className="relative flex md:flex-row flex-col p-3 my-10 justify-evenly items-center overflow-hidden max-w-[90%] md:max-w-[80%] md:min-h-full min-h-[700px] gap-5 bg-glassmorph backdrop-blur-[20px] rounded-2xl shadow-[rgba(0,0,0,0.2)]">
+            <style jsx>{`
+                .outline-text {
+                -webkit-text-stroke: 2px #c5bac4;
+                -webkit-text-fill-color: transparent;
+                }
+            `}</style>
+            <h1 className="sticky text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] opacity-20 -z-10 font-extrabold outline-text">
+                About me.
+            </h1>
+
+            <div className="relative flex md:flex-row flex-col p-3 my-10 justify-evenly items-center overflow-hidden max-w-[90%] md:max-w-[80%] md:min-h-full min-h-[700px] gap-5 bg-glassmorph backdrop-blur-md rounded-2xl shadow-[rgba(0,0,0,0.2)]">
 
                 <article className="flex flex-col md:w-1/4 min-h-80 items-center justify-center md:justify-between ">
                     <img className="md:w-[100%] md:h-[100%] w-[40%] h-[40%] my-2 rounded-[50%] hover:scale-[1.025] ease-in duration-200 border-2 border-mid shadow-xl"
@@ -39,7 +48,7 @@ const Contact = () => {
                     <div className="flex gap-5 justify-between md:justify-start">
                         {icons.map((icon) => {
                             return <div className="flex justify-center items-center px-2"
-                            key={icon}>
+                                key={icon}>
                                 <a className="text-primary text-6xl hover:scale-105 ease-out duration-200"
                                     href={icon.route}
                                     target="_blank"
