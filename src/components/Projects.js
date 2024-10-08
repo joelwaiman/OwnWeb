@@ -6,6 +6,7 @@ import chonkee from '../assets/chonkees.jpg'
 import midubooks from '../assets/midubooks.jpg'
 import smash from '../assets/smash.png'
 import dezure from '../assets/dezure.png'
+import hexaguess from '../assets/hexaguess.webp'
 
 const Projects = () => {
   const project = [
@@ -50,16 +51,25 @@ const Projects = () => {
       name: 'Smash Burguers',
       img: smash,
       link: 'https://burguers.vercel.app/',
-      description: 'Hamburguesería en proceso de creación para cliente local, con el fin de mostrar su trabajo y productos disponibles.',
+      description: 'Hamburguesería para cliente local, con el fin de mostrar su trabajo y productos disponibles.',
       year: '2024',
       techs: ['Javascript', 'NextJS']
     },
     {
       id: 5,
       name: 'Dezure Challenge',
-      img: dezure,
+      img: hexaguess,
       link: 'https://dezure-challenge.vercel.app/',
       description: 'Reproduce el audio de la llamada y permite al usuario hacer clic en cualquier parte de la transcripción para saltar a esa parte del audio.',
+      year: '2024',
+      techs: ['Javascript', 'NextJS', 'Typescript', 'Tailwind']
+    },
+    {
+      id: 6,
+      name: 'Hexaguess',
+      img: dezure,
+      link: 'https://hexa-guess.vercel.app/',
+      description: 'Mini juego. Con una tematica similar a "Wordle", tienes 5 oportunidades para acertar el color hexadecimal.',
       year: '2024',
       techs: ['Javascript', 'NextJS', 'Typescript', 'Tailwind']
     },
@@ -82,7 +92,7 @@ const Projects = () => {
 
       <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[80%] min-h-full">
         {project
-          .sort((a, b) => b.year - a.year)
+          .sort((a, b) => b.id - a.id)
           .map((card) => {
             return (
               <div key={card.id}
