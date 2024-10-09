@@ -86,9 +86,9 @@ const Projects = () => {
                 -webkit-text-fill-color: transparent;
                 }
             `}</style>
-            <h1 className="sticky mb-10 text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] opacity-20 -z-10 font-extrabold outline-text">
-                Projects.
-            </h1>
+      <h1 className="sticky mb-10 text-6xl sm:text-6xl md:text-7xl lg:text-8xl xl:text-[200px] opacity-20 -z-10 font-extrabold outline-text">
+        Projects.
+      </h1>
 
       <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-[80%] min-h-full">
         {project
@@ -98,12 +98,15 @@ const Projects = () => {
               <div key={card.id}
                 className="w-full border-2 border-primary bg-glassmorph backdrop-blur-md backdrop-opacity-80 rounded-2xl shadow-[rgba(0,0,0,0.2)] text-text p-6 flex flex-col justify-between gap-4 transition-transform duration-200"
               >
-                <div>
+                <div className="flex items-center gap-4 text-center">
                   <h1 className="text-2xl font-semibold">{card.name}</h1>
+                  <p className="px-3 py-1 bg-dark rounded-full w-fit text-xs md:text-sm">
+                    {card.year}
+                  </p>
+                </div>
                   <p className="text-sm md:text-base mt-2">
                     {card.description}
                   </p>
-                </div>
 
                 <div className="flex flex-wrap gap-2">
                   {card.techs.map((tech) => (
@@ -113,10 +116,6 @@ const Projects = () => {
                     </span>
                   ))}
                 </div>
-
-                <span className="px-3 py-1 bg-dark rounded-full w-fit text-xs md:text-sm">
-                  {card.year}
-                </span>
 
                 <a
                   href={card.link}

@@ -53,8 +53,8 @@ const Home = () => {
                     <div
                         className=" relative flex flex-col text-text items-center lg:items-start lg:text-start rounded-2xl shadow-[0_0_30px_0_rgba(0,0,0,0.3)] backdrop-blur-md backdrop-filter p-5 text-center w-full lg:w-3/4"
                     >
-                        <p className="text-3xl font-medium">Hola, soy
-                            <strong className="bg-gradient-to-tr font-bold from-primary to-secondary text-transparent bg-clip-text text-5xl"> Joel
+                        <p className="text-3xl font-medium">Hola, soy Joel
+                            <strong className="bg-gradient-to-tr font-bold from-primary to-secondary text-transparent bg-clip-text text-5xl">
                                 <br /> Front End Developer <br />
                             </strong> Es un placer que estés aqui.
                         </p>
@@ -62,7 +62,7 @@ const Home = () => {
                             <div className="flex flex-wrap justify-center lg:justify-start w-full gap-4 text-3xl text-secondary py-5">
                                 {iconsStack.map((icns) => (
                                     <div
-                                        className="flex flex-col items-center min-w-fit hover:scale-110 transition-all duration-200"
+                                        className="flex flex-col items-center min-w-fit transition-all duration-200"
                                         key={icns.id}
                                     >
                                         <span title={icns.title}>{icns.name}</span>
