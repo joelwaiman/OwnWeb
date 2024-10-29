@@ -25,17 +25,19 @@ export const Header = ({ activeSection }) => {
               className='relative w-full'
             >
               {activeSection === circ.route.substring(1) && (
-                <div className='absolute top-3 -right-3 w-10 h-10 bg-secondary rounded-xl animate-fade-right'
+                <div className='absolute top-3 -right-3 w-10 h-10 bg-primary rounded-xl animate-fade-right'
                   style={{ zIndex: -1 }} />
               )}
               <div
                 className={
                   activeSection === circ.route.substring(1)
-                    ? 'flex items-center gap-3 bg-[rgba(34,40,49,0.7)] backdrop-blur-[20px] p-5 rounded-xl transition-all duration-500 ease-in-out relative'
+                    ? 'flex items-center gap-3 bg-glassmorph backdrop-blur-[20px] p-5 rounded-xl transition-all duration-500 ease-in-out relative'
                     : 'flex items-center gap-3 p-5 transition-all duration-500 ease-in-out rounded-[25%] relative'
                 }
               >
-                <p>{circ.icon}</p>
+                <p className={activeSection === circ.route.substring(1)
+                    ? 'text-primary'
+                    : ''}>{circ.icon}</p>
                 <p>{circ.name}</p>
               </div>
             </HashLink>

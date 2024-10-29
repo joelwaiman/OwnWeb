@@ -66,7 +66,7 @@ const Home = () => {
                                         key={icns.id}
                                     >
                                         <span title={icns.title}>{icns.name}</span>
-                                        <p className="text-sm">{icns.title}</p>
+                                        <p className="text-lg">{icns.title}</p>
                                     </div>
                                 ))}
                             </div>
