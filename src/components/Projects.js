@@ -73,6 +73,15 @@ const Projects = () => {
       year: '2024',
       techs: ['Javascript', 'NextJS', 'Typescript', 'Tailwind']
     },
+    {
+      id: 7,
+      name: 'Wallbit-Challenge',
+      img: '',
+      link: 'https://wallbit-challenge-nine.vercel.app/',
+      description: 'Challenge para empresa. Simulación de carrito de compras, consumiendo producto desde API según id',
+      year: '2024',
+      techs: ['Javascript', 'ReactJS', 'Vite', 'Typescript', 'Tailwind']
+    },
   ]
 
 
