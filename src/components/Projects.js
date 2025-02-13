@@ -82,6 +82,15 @@ const Projects = () => {
       year: '2024',
       techs: ['Javascript', 'ReactJS', 'Vite', 'Typescript', 'Tailwind']
     },
+    {
+      id: 8,
+      name: 'Foodly',
+      img: '',
+      link: 'https://terrand-challenge.vercel.app/',
+      description: 'App de recetas. Permite creacion y registro de usuarios. Creación, edición, y eliminación de recetas para usuarios autenticados. Manejo de rutas publicas y autenticadas',
+      year: '2025',
+      techs: ['Javascript', 'Nextjs', 'MongoDB', 'Typescript', 'Tailwind', 'Prisma']
+    },
   ]
 
 
