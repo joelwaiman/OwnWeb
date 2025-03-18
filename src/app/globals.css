@@ -1,26 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Hind:wght@300;400;500;600;700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 @import "tailwindcss";
+
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+@theme {
+    --color-primary: oklch(79.71% 0.1641 69.71);
+    --color-secondary: oklch(85.93% 0.0378 147.7);
+    --color-tertiary: oklch(65.15% 0.0609 168.71);
+    --color-dark: oklch(30.52% 0 0);
+    --color-light: oklch(97.34% 0.0248 81.13);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+    --font-bevan: "Bevan", serif;
+    --font-ubuntu: "Ubuntu", sans-serif;
+    --font-hind: "Hind", sans-serif;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
