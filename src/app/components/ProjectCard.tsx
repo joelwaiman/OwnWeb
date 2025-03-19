@@ -38,7 +38,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         {project.techs.map((btn, i) => (
           <motion.button
             key={i}
-            className="bg-tertiary text-light px-3 py-2 rounded-md text-sm md:text-md"
+              className="bg-tertiary text-light px-3 py-2 rounded-md text-sm md:text-md"
           >
             {btn}
           </motion.button>
